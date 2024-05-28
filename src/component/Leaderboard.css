@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leaderboard-container {
+  width: 200vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.backtest-section {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 20px 0;
+  align-items: center;
+}
+
+.slippage-dropdown {
+  display: flex;
+  align-items: center;
+  /* border: solid 5px #444; */
+}
+
+.slippage-dropdown label {
+  padding: 6px;
+  margin-right: 10px;
+  /* border: solid 5px #444; */
+}
+
+.slippage-dropdown select {
+  padding: 8px;
+  /* margin-right: 10px; */
+  border: 5px #616161;
+  border-radius: 8px;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+thead {
+  background-color: #444;
+  color: white;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.action-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.action-link:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,89 @@
+/* src/Calendar.css */
+
+.calendar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: #1e88e5;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  padding: 16px;
+  text-align: center;
+}
+
+.col-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.col-start {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.col-end {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.days {
+  display: flex;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.cell {
+  flex: 1;
+  height: 100px;
+  position: relative;
+  cursor: pointer;
+}
+
+.cell.disabled {
+  background-color: #f0f0f0;
+}
+
+.cell.selected {
+  background-color: #1e88e5;
+  color: white;
+}
+
+.cell .number {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.cell .bg {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  cursor: pointer;
+  user-select: none;
+}
